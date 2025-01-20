@@ -64,7 +64,7 @@
     --bs-link-hover-color: #15967d;
     --bs-code-color: #d63384;
     --bs-highlight-bg: #fff3cd;
-  }
+  } 
 
 .btn-primary{
   background-color:var(--bs-yellow); 
