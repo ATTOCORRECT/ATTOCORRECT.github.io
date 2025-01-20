@@ -1,14 +1,15 @@
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
-    --bs-pink: #d63384;
+    --bs-purple: #7335f1;
+    --bs-pink: #eb1567;
     --bs-red: #dc3545;
-    --bs-orange: #fd7e14;
-    --bs-yellow: #ffc107;
+    --bs-orange: #ff6c39;
+    --bs-yellow: #ffbf10;
+    --bs-yellow-hover:#ffa610;
     --bs-green: #198754;
     --bs-teal: #1abc9c;
-    --bs-cyan: #0dcaf0;
+    --bs-cyan: #3babc5;
     --bs-black: #000;
     --bs-white: #fff;
     --bs-gray: #6c757d;
@@ -22,11 +23,11 @@
     --bs-gray-700: #495057;
     --bs-gray-800: #343a40;
     --bs-gray-900: #212529;
-    --bs-primary: #1abc9c;
-    --bs-secondary: #2c3e50;
+    --bs-primary: #ff6c39;
+    --bs-secondary: #ffbf10;
     --bs-success: #198754;
-    --bs-info: #0dcaf0;
-    --bs-warning: #ffc107;
+    --bs-info: #3babc5;
+    --bs-warning: #ffbf10;
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
@@ -65,53 +66,55 @@
     --bs-highlight-bg: #fff3cd;
   }
 
-  #mainNav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-weight: 700;
+.btn-primary{
+  background-color:var(--bs-yellow); 
+  border-color:var(--bs-yellow);
+  color:#000
+}
+.btn-primary:hover, .btn-primary:focus{
+  background-color:var(--bs-yellow-hover);
+  border-color:var(--bs-yellow-hover);
+  color:#000
+}
+
+
+  main > .container {
+    padding: 80px 15px 0;
   }
-  #mainNav .navbar-brand {
-    color: #fff;
+
+  #Nav .nav-pills .nav-link.active{
+    color: #000;
+    background-color:var(--bs-yellow);
   }
-  #mainNav .navbar-nav {
-    margin-top: 1rem;
+  #Nav .nav-pills .nav-link.active:hover,
+  #Nav .nav-pills .nav-link.active:focus{
+    color:#000;
+    background-color:var(--bs-yellow-hover);
   }
-  #mainNav .navbar-nav li.nav-item a.nav-link {
-    color: #fff;
-  }
-  #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: #1abc9c;
-  }
-  #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-    color: #fff;
-  }
-  #mainNav .navbar-nav li.nav-item a.nav-link.active {
-    color: #1abc9c;
-  }
-  #mainNav .navbar-toggler {
-    font-size: 80%;
-    padding: 0.8rem;
+  #Nav .nav-pills .nav-link:hover,
+  #Nav .nav-pills .nav-link:focus{
+    color:var(--bs-yellow);
   }
   
+  
   @media (min-width: 992px) {
-    #mainNav {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-      transition: padding-top 0.3s, padding-bottom 0.3s;
-    }
-    #mainNav .navbar-brand {
-      font-size: 1.75em;
-      transition: font-size 0.3s;
-    }
-    #mainNav .navbar-nav {
-      margin-top: 0;
-    }
+
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
       color: #fff;
-      background: #1abc9c;
+      background: var(--bs-green);
     }
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
       color: #fff;
-      background: #1abc9c;
+      background: var(--bs-green);
     }
   }
+/*-- Footer Styles ----*/
+footer{
+    background-color:var(--bs-gray-800);
+    color:#fff
+  }
+footer .btn-primary{
+  background-color:var(--bs-gray-900); 
+  border-color:var(--bs-gray-900);
+  color: var(--bs-gray-300)
+}
