@@ -207,13 +207,22 @@ main > .container {
 #Nav .navbar-collapse.justify-content-end.collapse.show .nav-link{
   margin-bottom:6px;
 }
+#home #Nav .navbar-toggler:focus{
+  background-color:var(--bs-red);
+}
 #home .nav-pills .nav-link.active{
   color: #000;
   background-color:var(--bs-red);
 }
+#projects #Nav .navbar-toggler:focus{
+  background-color:var(--bs-orange);
+}
 #projects .nav-pills .nav-link.active{
   color: #000;
   background-color:var(--bs-orange);
+}
+#resume #Nav .navbar-toggler:focus{
+  background-color:var(--bs-yellow);
 }
 #resume .nav-pills .nav-link.active{
   color: #000;
